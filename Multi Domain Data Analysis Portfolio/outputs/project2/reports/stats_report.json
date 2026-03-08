@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-03-06T23:58:10.969929",
+  "dataset_shape": {
+    "rows": 1000,
+    "cols": 14
+  },
+  "statistics": {
+    "descriptive": {
+      "mean": {
+        "math score": 66.09,
+        "reading score": 69.17,
+        "writing score": 68.05,
+        "average_score": 67.77
+      },
+      "median": {
+        "math score": 66.0,
+        "reading score": 70.0,
+        "writing score": 69.0,
+        "average_score": 68.33
+      },
+      "std": {
+        "math score": 15.16,
+        "reading score": 14.6,
+        "writing score": 15.2,
+        "average_score": 14.26
+      },
+      "skewness": {
+        "math score": -0.279,
+        "reading score": -0.259,
+        "writing score": -0.289,
+        "average_score": -0.299
+      },
+      "kurtosis": {
+        "math score": 0.275,
+        "reading score": -0.068,
+        "writing score": -0.033,
+        "average_score": 0.126
+      },
+      "min": {
+        "math score": 0.0,
+        "reading score": 17.0,
+        "writing score": 10.0,
+        "average_score": 9.0
+      },
+      "max": {
+        "math score": 100.0,
+        "reading score": 100.0,
+        "writing score": 100.0,
+        "average_score": 100.0
+      },
+      "iqr": {
+        "math score": 20.0,
+        "reading score": 20.0,
+        "writing score": 21.25,
+        "average_score": 19.34
+      }
+    },
+    "normality": {
+      "W_stat": {
+        "math score": 0.9932,
+        "reading score": 0.9929,
+        "writing score": 0.992,
+        "average_score": 0.9932
+      },
+      "p_value": {
+        "math score": 0.0001,
+        "reading score": 0.0001,
+        "writing score": 0.0,
+        "average_score": 0.0001
+      },
+      "is_normal": {
+        "math score": false,
+        "reading score": false,
+        "writing score": false,
+        "average_score": false
+      }
+    },
+    "gender_t_test": {
+      "groups": {
+        "female": 69.57,
+        "male": 65.84
+      },
+      "t_stat": 4.1791,
+      "p_value": 0.0,
+      "significant": "True",
+      "cohen_d": 0.2642,
+      "effect_size": "small"
+    },
+    "testprep_t_test": {
+      "groups": {
+        "none": 65.04,
+        "completed": 72.67
+      },
+      "t_stat": -8.5947,
+      "p_value": 0.0,
+      "significant": "True",
+      "cohen_d": -0.5601,
+      "effect_size": "medium"
+    },
+    "lunch_t_test": {
+      "groups": {
+        "standard": 70.84,
+        "free/reduced": 62.2
+      },
+      "t_stat": 9.3232,
+      "p_value": 0.0,
+      "significant": "True",
+      "cohen_d": 0.6243,
+      "effect_size": "medium"
+    },
+    "edu_anova": {
+      "group_col": "parental level of education",
+      "value_col": "average_score",
+      "f_stat": 10.7529,
+      "p_value": 0.0,
+      "significant": "True",
+      "group_means": {
+        "bachelor's degree": 71.92,
+        "some college": 68.48,
+        "master's degree": 73.6,
+        "associate's degree": 69.57,
+        "high school": 63.1,
+        "some high school": 65.11
+      },
+      "tukey_summary": "            Multiple Comparison of Means - Tukey HSD, FWER=0.05             \n============================================================================\n      group1             group2      meandiff p-adj   lower    upper  reject\n----------------------------------------------------------------------------\nassociate's degree bachelor's degree    2.355 0.6741  -2.1735  6.8836  False\nassociate's degree       high school  -6.4718    0.0 -10.3678 -2.5757   True\nassociate's degree   master's degree   4.0297 0.3568  -1.7925  9.8519  False\nassociate's degree      some college  -1.0929 0.9618   -4.849  2.6633  False\nassociate's degree  some high school  -4.4613 0.0183  -8.4544 -0.4682   True\n bachelor's degree       high school  -8.8268    0.0 -13.4584 -4.1952   True\n bachelor's degree   master's degree   1.6747 0.9748  -4.6634  8.0127  False\n bachelor's degree      some college  -3.4479 0.2477  -7.9625  1.0667  False\n bachelor's degree  some high school  -6.8163 0.0006 -11.5299 -2.1028   True\n       high school   master's degree  10.5015    0.0   4.5987 16.4042   True\n       high school      some college   5.3789 0.0011   1.4991  9.2587   True\n       high school  some high school   2.0105  0.729  -2.0991  6.1201  False\n   master's degree      some college  -5.1225 0.1201 -10.9339  0.6888  False\n   master's degree  some high school   -8.491 0.0007 -14.4582 -2.5237   True\n      some college  some high school  -3.3685 0.1509  -7.3457  0.6088  False\n----------------------------------------------------------------------------"
+    },
+    "ethnicity_anova": {
+      "group_col": "race/ethnicity",
+      "value_col": "average_score",
+      "f_stat": 9.0957,
+      "p_value": 0.0,
+      "significant": "True",
+      "group_means": {
+        "group b": 65.47,
+        "group c": 67.13,
+        "group a": 62.99,
+        "group d": 69.18,
+        "group e": 72.75
+      },
+      "tukey_summary": " Multiple Comparison of Means - Tukey HSD, FWER=0.05  \n======================================================\n group1  group2 meandiff p-adj   lower   upper  reject\n------------------------------------------------------\ngroup a group b   2.4764 0.6445  -2.449  7.4019  False\ngroup a group c   4.1394 0.1005 -0.4574  8.7362  False\ngroup a group d   6.1873 0.0031  1.4826 10.8919   True\ngroup a group e   9.7599    0.0  4.5614 14.9583   True\ngroup b group c    1.663 0.6955  -1.851   5.177  False\ngroup b group d   3.7108 0.0445  0.0569  7.3647   True\ngroup b group e   7.2834    0.0  3.0124 11.5544   True\ngroup c group d   2.0478 0.4035 -1.1493  5.2449  False\ngroup c group e   5.6204 0.0008   1.733  9.5079   True\ngroup d group e   3.5726 0.1077 -0.4417   7.587  False\n------------------------------------------------------"
+    },
+    "correlation": {
+      "math score": {
+        "math score": 1.0,
+        "reading score": 0.818,
+        "writing score": 0.803,
+        "average_score": 0.919
+      },
+      "reading score": {
+        "math score": 0.818,
+        "reading score": 1.0,
+        "writing score": 0.955,
+        "average_score": 0.97
+      },
+      "writing score": {
+        "math score": 0.803,
+        "reading score": 0.955,
+        "writing score": 1.0,
+        "average_score": 0.966
+      },
+      "average_score": {
+        "math score": 0.919,
+        "reading score": 0.97,
+        "writing score": 0.966,
+        "average_score": 1.0
+      }
+    },
+    "pass_rate_gender": {
+      "gender": {
+        "0": "female",
+        "1": "male"
+      },
+      "pass_rate_%": {
+        "0": 76.06,
+        "1": 66.6
+      }
+    },
+    "pass_rate_testprep": {
+      "test preparation course": {
+        "0": "completed",
+        "1": "none"
+      },
+      "pass_rate_%": {
+        "0": 83.24,
+        "1": 64.95
+      }
+    }
+  }
+}
